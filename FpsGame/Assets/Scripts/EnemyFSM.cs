@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class EnemyFSM : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class EnemyFSM : MonoBehaviour
 
     // 초기 위치 저장용 변수
     Vector3 originPos;
+    Quaternion originRot;
 
     // 이동 가능 범위
     public float moveDistance = 20f;
@@ -55,6 +57,10 @@ public class EnemyFSM : MonoBehaviour
     int maxHp = 15;
 
     public Slider hpSlider;
+
+    Animator anim;
+
+    NavMeshAgent smith;
 
     void Start()
     {
@@ -69,6 +75,11 @@ public class EnemyFSM : MonoBehaviour
 
         // 자신의 초기 위치 저장하기
         originPos = transform.position;
+        originRot = transform.rotation;
+
+        anim = transform.GetComponentInChildren<Animator>();
+
+        smith = GetComponent<NavMeshAgent>();
     }
 
     void Update()
@@ -106,6 +117,8 @@ public class EnemyFSM : MonoBehaviour
         {
             m_State = EnemyState.Move;
             print("상태 전환: Idle -> Move");
+
+            anim.SetTrigger("IdleToMove");
         }
     }
 
@@ -122,11 +135,22 @@ public class EnemyFSM : MonoBehaviour
         // 만일, 플레이어와의 거리가 공격 범위 밖이라면 플레이어를 향해 이동한다.
         else if (Vector3.Distance(transform.position, player.position) > attackDistance)
         {
-            // 이동 방향 설정
-            Vector3 dir = (player.position - transform.position).normalized;
+            //// 이동 방향 설정
+            //Vector3 dir = (player.position - transform.position).normalized;
 
-            // 캐릭터 콘트롤러를 이용하여 이동하기
-            cc.Move(dir * moveSpeed * Time.deltaTime);
+            //// 캐릭터 콘트롤러를 이용하여 이동하기
+            //cc.Move(dir * moveSpeed * Time.deltaTime);
+
+            //transform.forward = dir;
+            smith.isStopped = true;
+
+            smith.ResetPath();
+
+            smith.stoppingDistance = attackDistance;
+
+            smith.destination = player.position;
+
+
         }
         // 그렇지 않다면, 현재 상태를 Attack 상태로 전환한다.
         else
@@ -136,6 +160,8 @@ public class EnemyFSM : MonoBehaviour
 
             // 누적 시간을 공격 딜레이 시간만큼 미리 진행시켜놓는다.
             currentTime = attackDelay;
+
+            anim.SetTrigger("MoveToAttackDelay");
         }
     }
 
@@ -148,9 +174,10 @@ public class EnemyFSM : MonoBehaviour
             currentTime += Time.deltaTime;
             if (currentTime > attackDelay)
             {
-                player.GetComponent<PlayerMove>().DamageAction(attackPower);
+                //player.GetComponent<PlayerMove>().DamageAction(attackPower);
                 print("공격");
                 currentTime = 0;
+                anim.SetTrigger("StartAttack");
             }
         }
         // 그렇지 않다면, 현재 상태를 Move 상태로 전환한다(재 추격 실시).
@@ -159,7 +186,15 @@ public class EnemyFSM : MonoBehaviour
             m_State = EnemyState.Move;
             print("상태 전환: Attack -> Move");
             currentTime = 0;
+
+            anim.SetTrigger("AttackToMove");
         }
+    }
+
+    public void AttackAction()
+    {
+        player.GetComponent<PlayerMove>().DamageAction(attackPower);
+
     }
 
     void Return()
@@ -167,16 +202,28 @@ public class EnemyFSM : MonoBehaviour
         // 만일, 초기 위치에서의 거리가 0.1f 이상이라면 초기 위치 쪽으로 이동한다.
         if (Vector3.Distance(transform.position, originPos) > 0.1f)
         {
-            Vector3 dir = (originPos - transform.position).normalized;
-            cc.Move(dir * moveSpeed * Time.deltaTime);
+            //Vector3 dir = (originPos - transform.position).normalized;
+            //cc.Move(dir * moveSpeed * Time.deltaTime);
+
+            //transform.forward = dir;
+
+            smith.destination = originPos;
+
+            smith.stoppingDistance = 0;
         }
         // 그렇지 않다면, 자신의 위치를 초기 위치로 조정하고 현재 상태를 대기 상태로 전환한다.
         else
         {
+            smith.isStopped = true;
+            smith.ResetPath();
+
             transform.position = originPos;
+            transform.rotation = originRot;
 
             m_State = EnemyState.Idle;
             print("상태 전환: Return -> Idle");
+
+            anim.SetTrigger("MoveToIdle");
         }
     }
 
@@ -192,12 +239,16 @@ public class EnemyFSM : MonoBehaviour
         // 플레이어의 공격력만큼 에너미의 체력을 감소시킨다.
         hp -= hitPower;
 
+        smith.isStopped = true;
+        smith.ResetPath();
+
         // 에너미의 체력이 0보다 크면 피격 상태로 전환한다.
         if (hp > 0)
         {
             m_State = EnemyState.Damaged;
             print("상태 전환: Any state -> Damaged");
 
+            anim.SetTrigger("Damaged");
             Damaged();
         }
         // 그렇지 않다면, 죽음 상태로 전환한다.
@@ -205,6 +256,8 @@ public class EnemyFSM : MonoBehaviour
         {
             m_State = EnemyState.Die;
             print("상태 전환: Any state -> Die");
+
+            anim.SetTrigger("Die");
 
             Die();
         }
@@ -220,7 +273,7 @@ public class EnemyFSM : MonoBehaviour
     IEnumerator DamageProcess()
     {
         // 피격 모션 시간만큼 기다린다.
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
 
         // 현재 상태를 이동 상태로 전환한다.
         m_State = EnemyState.Move;
