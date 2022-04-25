@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.2/staging' branch; Version is '2021.2.18f1 (0c6e675195cf) revision 814695'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'ko' Physical Memory: 8137 MB
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'ko' Physical Memory: 32686 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Unity.exe
+C:\Program Files\Unity 2021.2.18f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/hykcg/Documents/GitHub/unity-FpsGame-/FpsGame
+C:/Users/YONSAI/Desktop/unity-FpsGame-/FpsGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63311
-Successfully changed project path to: C:/Users/hykcg/Documents/GitHub/unity-FpsGame-/FpsGame
-C:/Users/hykcg/Documents/GitHub/unity-FpsGame-/FpsGame
+50014
+Successfully changed project path to: C:/Users/YONSAI/Desktop/unity-FpsGame-/FpsGame
+C:/Users/YONSAI/Desktop/unity-FpsGame-/FpsGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,106 +47,220 @@ C:/Users/hykcg/Documents/GitHub/unity-FpsGame-/FpsGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 83.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 68.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.18f1 (0c6e675195cf)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/hykcg/Documents/GitHub/unity-FpsGame-/FpsGame/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.2.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/YONSAI/Desktop/unity-FpsGame-/FpsGame/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GT 1030 (ID=0x1d01)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
     Vendor:   NVIDIA
-    VRAM:     1982 MB
-    Driver:   30.0.15.1215
+    VRAM:     3962 MB
+    Driver:   30.0.14.9729
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.18f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Mono path[0] = 'C:/Program Files/Unity 2021.2.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.2.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.2.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.023874 seconds.
+Register platform support module: C:/Program Files/Unity 2021.2.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004951 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 65.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.739 seconds
+- Completed reload, in  0.757 seconds
 Domain Reload Profiling:
-	ReloadAssembly (739ms)
-		BeginReloadAssembly (126ms)
+	ReloadAssembly (757ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (454ms)
-			LoadAssemblies (119ms)
+		EndReloadAssembly (501ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (101ms)
+			SetupTypeCache (206ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (265ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (225ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (83ms)
+				RefreshPlugins (66ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (115ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012921 seconds.
+Registered in 0.004589 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\hykcg\Documents\GitHub\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\YONSAI\Desktop\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\hykcg\Documents\GitHub\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\YONSAI\Desktop\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.157 seconds
+- Completed reload, in  0.920 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1158ms)
-		BeginReloadAssembly (169ms)
+	ReloadAssembly (921ms)
+		BeginReloadAssembly (106ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (841ms)
-			LoadAssemblies (148ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (713ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (255ms)
+			SetupTypeCache (217ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (378ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (333ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3236 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (112.7 KB). Loaded Objects now: 3701.
+Memory consumption went from 113.2 MB to 113.1 MB.
+Total: 2.518500 ms (FindLiveObjects: 0.269000 ms CreateObjectMapping: 0.202300 ms MarkObjects: 1.962100 ms  DeleteObjects: 0.084500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003774 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\YONSAI\Desktop\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\YONSAI\Desktop\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.826 seconds
+Domain Reload Profiling:
+	ReloadAssembly (826ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (625ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (216ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3231 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (79.7 KB). Loaded Objects now: 3704.
+Memory consumption went from 113.1 MB to 113.1 MB.
+Total: 2.389200 ms (FindLiveObjects: 0.227400 ms CreateObjectMapping: 0.129900 ms MarkObjects: 1.951800 ms  DeleteObjects: 0.078500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004766 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\YONSAI\Desktop\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\YONSAI\Desktop\unity-FpsGame-\FpsGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.852 seconds
+Domain Reload Profiling:
+	ReloadAssembly (853ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (231ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (254ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (111ms)
-				ProcessInitializeOnLoadAttributes (207ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (26ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3235 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (112.6 KB). Loaded Objects now: 3699.
-Memory consumption went from 117.2 MB to 117.0 MB.
-Total: 3.578700 ms (FindLiveObjects: 0.313700 ms CreateObjectMapping: 0.102300 ms MarkObjects: 2.963400 ms  DeleteObjects: 0.198000 ms)
+Unloading 3237 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (79.6 KB). Loaded Objects now: 3713.
+Memory consumption went from 113.3 MB to 113.3 MB.
+Total: 2.474700 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.204400 ms MarkObjects: 1.927900 ms  DeleteObjects: 0.086000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,64 +274,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 386857.038566 seconds.
-  path: Assets/Material
-  artifactKey: Guid(c8cff0bf3c5f58047bd7dd25f2624289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material using Guid(c8cff0bf3c5f58047bd7dd25f2624289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ab95595fed0d145eec235a870c521e') in 0.007639 seconds 
+  Time since last request: 3621.006502 seconds.
+  path: Assets/LowPolySoldiers_demo/models/Soldier_demo.FBX
+  artifactKey: Guid(fcb334eb247ae3e488abb081c847cf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySoldiers_demo/models/Soldier_demo.FBX using Guid(fcb334eb247ae3e488abb081c847cf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42811373384b001281b514b7b5088d5b') in 0.176106 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 37.597707 seconds.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(d4e29cdaa7a08274fb7ac3e27012b565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameManager.cs using Guid(d4e29cdaa7a08274fb7ac3e27012b565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd904f4aa7c66794344511a9cbb0cd838') in 0.074036 seconds 
+  Time since last request: 0.138809 seconds.
+  path: Assets/LowPolySoldiers_demo/animation/demo_combat_idle.FBX
+  artifactKey: Guid(47c000e8e166f14429b339a7adc36151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySoldiers_demo/animation/demo_combat_idle.FBX using Guid(47c000e8e166f14429b339a7adc36151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1200c50586d5991b07cc10ee0d1452f8') in 0.015207 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 418.881936 seconds.
-  path: Assets/Zombie/Prefabs
-  artifactKey: Guid(62092c25312055548a5b415184883759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Prefabs using Guid(62092c25312055548a5b415184883759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6799e67b6458fd8802e0645075f9819') in 0.002763 seconds 
+  Time since last request: 0.000017 seconds.
+  path: Assets/LowPolySoldiers_demo/animation/demo_combat_shoot.FBX
+  artifactKey: Guid(9f53ab04fc057a8448d43ff8001f3d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySoldiers_demo/animation/demo_combat_shoot.FBX using Guid(9f53ab04fc057a8448d43ff8001f3d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08754d80f65b2f2b659936dc8157f95b') in 0.013081 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.134149 seconds.
-  path: Assets/Zombie/Prefabs/Zombie1.prefab
-  artifactKey: Guid(6dc4cf4496348884d8ee27743ae38562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Prefabs/Zombie1.prefab using Guid(6dc4cf4496348884d8ee27743ae38562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a21506a81ae2263ca277ac79567d4fe') in 0.474884 seconds 
+  Time since last request: 6.583229 seconds.
+  path: Assets/Easy FPS/MuzzelFlash
+  artifactKey: Guid(388b8e363a6d14018b980f0a7537acd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy FPS/MuzzelFlash using Guid(388b8e363a6d14018b980f0a7537acd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad347f4e9a3edeb11af1f5b80c53a79') in 0.005430 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Zombie/Prefabs/Zombie3.prefab
-  artifactKey: Guid(06cb2b131fe009c47a523671a8fa9ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Prefabs/Zombie3.prefab using Guid(06cb2b131fe009c47a523671a8fa9ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbf5daf755478d932af1ab131e3944d') in 0.075133 seconds 
+  Time since last request: 1.636798 seconds.
+  path: Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs
+  artifactKey: Guid(b0c90e91391ee435e907cfd236887dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs using Guid(b0c90e91391ee435e907cfd236887dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a950c10b2ecd104c619a4931e69c531') in 0.005970 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 237.037459 seconds.
-  path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
-  artifactKey: Guid(631762b9a30b33a42836730a6b37d13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Animations/Zombie@Z_Attack.FBX using Guid(631762b9a30b33a42836730a6b37d13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c786d026fea2122c34c11041590acfc') in 0.386997 seconds 
+  Time since last request: 0.740805 seconds.
+  path: Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs/muzzelFlash 01.prefab
+  artifactKey: Guid(51b76f616384d4946bed4ecc9a6c2c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs/muzzelFlash 01.prefab using Guid(51b76f616384d4946bed4ecc9a6c2c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94c8e97b4278af2a41e4780729dfac4') in 0.041457 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Zombie/Animations/Zombie@Z_Run.FBX
-  artifactKey: Guid(55edd2c9d257d3f4481dfd16015bf8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Animations/Zombie@Z_Run.FBX using Guid(55edd2c9d257d3f4481dfd16015bf8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05cd3c7ae4e1fcea96e9c620b81ea29e') in 0.164075 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs/muzzelFlash 05.prefab
+  artifactKey: Guid(4aa4c63f0f9d6a84dbaeed6b9caeca80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs/muzzelFlash 05.prefab using Guid(4aa4c63f0f9d6a84dbaeed6b9caeca80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc17bed3f6f4b8691e03abbebf0ff206') in 0.015428 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
-  artifactKey: Guid(0d6373858f853604b960cf84b7d3dfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Animations/Zombie@Z_Idle.FBX using Guid(0d6373858f853604b960cf84b7d3dfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfde2b39e8a18749e1650aab77921c8') in 0.170597 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
-  artifactKey: Guid(79969b20b5ba62e499ee433a4dd38701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX using Guid(79969b20b5ba62e499ee433a4dd38701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d34dde9503abc4b621c2f68278aa7a') in 0.145967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.095174 seconds.
-  path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
-  artifactKey: Guid(3fa7045af54b82c47852949257d136c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX using Guid(3fa7045af54b82c47852949257d136c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384526b007737eeeb33233e53642de46') in 0.160792 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs/muzzelFlash 03.prefab
+  artifactKey: Guid(7b6a7e40bd9ccc0489274923930761c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy FPS/MuzzelFlash/MuzzlePrefabs/muzzelFlash 03.prefab using Guid(7b6a7e40bd9ccc0489274923930761c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e38b198cf7fffcb6dfdae21c035bef0') in 0.018104 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
